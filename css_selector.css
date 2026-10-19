@@ -1,0 +1,44 @@
+* {
+  color: green
+}
+
+li {
+  color: blue
+}
+
+li#special {
+  color: pink;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  /* 한줄 정의 - 전체, 위아래, 좌우, 시계방향 */
+  margin: 10px 30px;
+  /* 한 줄 정의 - 시계방향 : 상, 우, 하, 좌*/
+  padding: 20px 100px 30pc 20px;
+  /* 선 굵기, 선형태, 선색깔 */
+  border: 2px dotted red;
+}
+
+button:hover {
+  color: red;
+  background: beige;
+}
+
+a[href^='naver'] {
+  color: purple;
+}
+
+/* href 값이 특정문자로 끝나는 a tag 만
+a[href$='com'] {
+  color: purple;
+} 
+*/

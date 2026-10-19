@@ -1,0 +1,41 @@
+* {
+  margin: 20px;
+}
+
+div {
+  width: 80px;
+  height: 80px;
+  background: red;  
+}
+
+span {
+  width: 80px;
+  height: 80px;
+  background: blue;
+}
+
+/*
+ 한라인에 하나만 놓을 수 있는 상자 성격의 block tag 를 
+ 한줄에 표시하는 상자성격의 tag 로 변경하는 inline-block 
+ */
+div {
+  display: inline-block;  
+}
+
+/* 
+ 한라인에 하나만 놓을 수 있는 상자 성격의 block tag 의 
+ content를 꾸며주는 inline 으로 변경 
+ */
+div {
+  display: inline;
+}
+
+/* 
+ 상자의 content 만 꾸미는 inline 성격의 tag 를 
+ 한라인에 하나만 놓을 수 있는 상자 성격의 block 으로 변경 
+ */
+span {
+  display: block;
+}
+
+
