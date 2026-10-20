@@ -1,0 +1,47 @@
+/* 최상위 브라우저에 꽉 차게 */ 
+/* body, html { 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+} */
+
+.container {
+  background: beige;
+  height: 100vh; /* 부모인 상관없이 내가 높이를 다쓰겠다.  */
+  /*  컨테이너 레벨의 item 성격 속성 정의 */
+  display: flex; 
+  align-items: center;
+}
+
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+/* 컬러 디자인 시스템 : https://m3.material.io/styles/color/system/overview  */
+.item1 {
+  background: #ef9a9a;
+  /* flex-grow: 2 - 아이템의 컨테이너가 늘어날때 현재 보다 2배씩 늘어나 라는 속성 정의  */
+  /* flex-grow: 2; */
+  /* flex-shrink: 2 - 아이템의 컨테이너 좌우크기가 줄어 들때 현재 보다 2배씩 줄어들어라 라는 속성 정의 */
+  /* flex-shrink: 0 - 아이템의 컨테이너 좌우크기가 줄어 들때 현재 크기를 유지해라 라는 속성 정의 */
+  /* flex-shrink: 2; */
+  /* flex-basis: 컨테이너의 좌우크기가 변경될때 비율을 유지 해라 */
+  flex-basis: 60%;
+  /* 컨테이너 컨트롤을 벗어나서 이 아이템만 따로 정의 하고 싶을때 사용  */ 
+  align-self: self-end;
+}
+.item2 {
+  background: #f48fb1;
+  /* flex-shrink: 1; */
+  /* flex-basis: 컨테이너의 좌우크기가 변경될때 비율을 유지 해라 */
+  flex-basis: 30%;
+}
+.item3 {
+  background: #ce93d8;
+  /* flex-shrink: 1; */
+  /* flex-basis: 컨테이너의 좌우크기가 변경될때 비율을 유지 해라 */
+  flex-basis: 10%;
+}

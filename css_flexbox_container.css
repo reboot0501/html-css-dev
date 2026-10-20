@@ -1,0 +1,64 @@
+body, html { /* 최상위 브라우저에 꽉 차게 */ 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: beige;
+  height: 100vh; /* 부모인 상관없이 내가 높이를 다쓰겠다.  */
+/*  컨테이너 레벨의 속성 정의 */
+  display: flex; 
+  /* flex-direction: row - 왼쪽에서 오른쪽, row-reverse - 오른쪽에서 왼쪽으로 */
+  flex-direction: row;
+  /* flex-wrap: wrap: 브라우저 크기가 줄어들면 item 들이 다음줄로 떨어짐 */  
+  flex-wrap: wrap; 
+  /* flex-direction 과 flex-wrap 속성을 합쳐서 정의하는 속성  */ 
+  /* flex-flow: row wrap;  */
+/* 컨테이너 아이템 레벨의 속성 정의 */
+  /* 중심축 main axis 에서 정렬, 간격 띄우기 */
+  justify-content: space-between; /* justify-content: space-between - 아이템 간격 띄우기 */
+  /* 반대축에서 아이템 들의 text 정렬을 균등하게 해줘 */
+  align-items: baseline;
+  /* 반대축에서 아이템 정렬, 간격 띄우기  */
+  align-content: center;
+}
+
+
+.item {
+  width: 40px;
+  height: 40px;
+}
+
+/* 컬러 디자인 시스템 : https://m3.material.io/styles/color/system/overview  */
+.item1 {
+  background: #ef9a9a;
+  padding: 20px;
+}
+.item2 {
+  background: #f48fb1;
+}
+.item3 {
+  background: #ce93d8;
+}
+.item4 {
+  background: #b39ddb;
+}
+.item5 {
+  background: #90caf9;
+}
+.item6 {
+  background: #a5d6a7;
+}
+.item7 {
+  background: #e6ee9c;
+}
+.item8 {
+  background: #fff176;
+}
+.item9 {
+  background: #ffb74d;
+}
+.item10 {
+  background: #ef9a9a;
+}
