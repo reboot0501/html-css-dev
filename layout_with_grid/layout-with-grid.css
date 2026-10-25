@@ -3,6 +3,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  padding: 0;
   display: grid;
   /* 그리드의 전체 가로를 4등분하여 3등분과 1등분으로 2등분 함 */
   grid-template-columns: 3fr 1fr;
@@ -22,7 +23,7 @@ body {
 
 header, main, aside, footer {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* 자식은 가로 방향 center */
   align-items: center;
 }
 

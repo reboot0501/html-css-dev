@@ -1,0 +1,33 @@
+.component {
+  /* box 너비는 부모의 넓이의 %로 하는 것이 좋다 */
+  width: 50%;
+  border: 1px solid burlywood;
+  /* font size 는 root element 기본 font size 의 3배 */
+  font-size: 3rem;
+}
+
+.title {
+  /* 
+    padding em 상하(지금 현재 font size 에따라 가변적) : 자기자신의 font size 의 0.5배 
+    padding rem 좌우(고정적) : root element 기본 font size 의 0.5배 
+  */
+  padding: 0.5em 0.5rem;
+  background-color: burlywood;
+}
+
+.contents {
+  /* root element 기본 font size 의 1배 고정 */
+  font-size: 1rem;
+  /* 
+    padding em 상하(지금 현재 font size 에따라 가변적) : 자기자신의 font size 의 0.5배 
+    padding rem 좌우(고정적) : root element 기본 font size 의 0.5배 
+  */
+  padding: 0.5em 0.5rem;
+}
+
+/* 화면 너비가 780px 이하일 때 component의 글자 크기를 루트 요소(html) 글자 크기의 1.5배로 설정*/
+@media screen and (max-width: 780px) {
+  .component {
+    font-size: 1.5rem;
+  }
+}

@@ -1,4 +1,4 @@
-body, html { /* 최상위 브라우저에 꽉 차게 */ 
+body, html { /* 최상위 브라우저에 높이가 꽉 차게 */ 
   min-height: 100vh; 
   margin: 0;
   padding: 0;

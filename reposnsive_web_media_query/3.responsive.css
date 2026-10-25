@@ -1,0 +1,37 @@
+h1 {
+  font-size: 1.75rem; /* 28px */
+  color: burlywood;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding: 2em;
+}
+
+.component {
+  border: 1px solid burlywood;
+  margin: 1em;
+}
+
+.title {
+  font-size: 1.5rem; /* root element 의 1.5 배 */
+  padding: 1em; /* padding은 현재 요소 font size 의 1배*/
+  background-color: burlywood;
+}
+
+.contents {
+  font-size: 1.125rem;
+  padding: 1em;
+}
+
+/* root element 48배 768px 이하일 때 적용합니다. 
+   기본 루트 글자 크기가 16px이면 48rem = 768px 이하면
+   .container의 Flex 아이템 배치 방향을 가로(row)에서 세로(column)로 변경
+*/
+@media screen and (max-width: 48rem) { 
+  .container {
+    flex-direction: column;
+  }
+}

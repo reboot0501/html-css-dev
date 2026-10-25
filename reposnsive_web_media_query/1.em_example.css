@@ -1,0 +1,21 @@
+h1 {
+  display: inline-block;
+  /* 부모(현재는 body) 기본 font size 16 px 의 5배 */
+  font-size: 5em;
+  background-color: mediumaquamarine;
+  /* 부모(현재는 body) 기본 font size 16 px 의 1 배*/
+  padding: 1em;
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+  
