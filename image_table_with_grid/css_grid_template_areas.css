@@ -1,0 +1,61 @@
+body {
+  padding: 5rem;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  /* root html 기본 16px 크기의 1 배(반응형) = 16px */
+  grid-gap: 1rem;
+  /* 각 grid cell 의 표시 위치와 병합을 지정 */
+  grid-template-areas: 
+    'a a a'
+    'b c c'
+    'b d g'
+    'e f g'
+  ;
+}
+
+.image {
+  /* 부모 컨테이너의 가로 100% */
+  width: 100%;
+  /* 부모 컨테이너의 세로 100% */
+  height: 100%;
+  /* <img>나 <video>의 콘텐츠를 지정된 크기의 상자에 비율을 유지한 채 꽉 채우는 설정입니다. 
+     원본 비율과 상자 비율이 다르면 넘치는 부분은 잘립니다.
+     contain을 사용하면 이미지가 잘리지 않고 표시 됨 */
+  object-fit: cover;
+}
+
+/* 각 grid cell 의 영역 지정 */
+.image1 {
+  grid-area: a;
+}
+
+.image2 {
+  grid-area: b;
+}
+
+.image3 {
+  grid-area: c;
+}
+
+.image4 {
+  grid-area: d;
+}
+
+.image5 {
+  grid-area: e;
+}
+
+.image6 {
+  grid-area: f;
+}
+
+.image7 {
+  grid-area: g;
+}
+
+

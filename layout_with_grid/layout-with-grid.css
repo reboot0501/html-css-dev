@@ -1,0 +1,52 @@
+body {
+  /* 브라우저 꽉 차게 가로 높이 다 쓴다. */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  /* 그리드의 전체 가로를 4등분하여 3등분과 1등분으로 2등분 함 */
+  grid-template-columns: 3fr 1fr;
+  /* 그리드의 rows 3등분하여 
+     - 첫번째 row 높이를 100px
+     - 두번째 row 높이를 auto
+     - 세번째 row 높이를 50px  
+  */
+  grid-template-rows: 100px auto 50px;
+  /* 그리드 셀의 위치및 병합을 지정 */
+  grid-template-areas: 
+    'header header'
+    'main side'
+    'footer footer'
+  ;
+}
+
+header, main, aside, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+  color: white;
+}
+
+
+main {
+  grid-area: main;
+  background-color: white;
+}
+
+aside {
+  grid-area: side;
+  background-color: #ff9d00;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+}
+
+
